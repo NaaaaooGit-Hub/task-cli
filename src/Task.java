@@ -17,7 +17,6 @@ public class Task {
         System.out.println("Title: " + title);
         System.out.println("Deadline: " + deadline);
 
-
         if(done){
             System.out.print("[x] Complete");
         }

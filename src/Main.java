@@ -6,8 +6,7 @@ public class Main {
 
         manager.addTask(new Task("Memorize", "2026-07-01"));
         manager.addTask(new Task("To-Do", "2026-07-05"));
-
-
+        manager.listTasks();
 
 
         //Task task1 = new Task("Memorize", "2026-07-01");
@@ -16,8 +15,6 @@ public class Main {
         //Task task2 = new Task("To-Do", "2026-07-05");
         //manager.addTask(task2);
 
-
-        manager.listTasks();
 
         manager.completeTask(0);
         manager.listTasks();
