@@ -1,0 +1,2 @@
+Memorize,2026-07-01,true
+To-Do,2026-07-05,false

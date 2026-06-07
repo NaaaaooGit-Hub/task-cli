@@ -1,7 +1,9 @@
-import java.util.ArrayList;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class TaskManager {
 
@@ -40,11 +42,33 @@ public class TaskManager {
 
         }
         finally {
-            if(file != null){
-                try { file.close(); } catch(IOException e) {}
-            }
+            try{ file.close(); } catch(IOException e){}
+
         }
 
+    }
+
+    void loadTasks(){
+
+        try {
+            Scanner sc = new Scanner(new File("tasks.txt"));
+
+            while (sc.hasNextLine()) {
+                String line = sc.nextLine();
+                String[] parts = line.split(",");
+
+                Task task = new Task(parts[0], parts[1]);
+                task.done = task.done = Boolean.parseBoolean(parts[2]);
+                taskList.add(task);
+
+            }
+        }
+        catch(FileNotFoundException e){
+                System.out.println("Not Found File: " + e.getMessage());{
+
+        }
+
+        }
     }
 
 }

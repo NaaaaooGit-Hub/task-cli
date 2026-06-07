@@ -4,6 +4,8 @@ public class Main {
 
         TaskManager manager = new TaskManager();
 
+        manager.loadTasks();
+
         manager.addTask(new Task("Memorize", "2026-07-01"));
         manager.addTask(new Task("To-Do", "2026-07-05"));
         manager.listTasks();
@@ -21,6 +23,8 @@ public class Main {
 
         manager.deleteTask(1);
         manager.listTasks();
+
+        manager.saveTask();
 
 
     }
