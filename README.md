@@ -29,7 +29,9 @@ I built this project to practice object-oriented programming (OOP) in Java from 
 
 ## Project Structure
 
-\`\`\`
+## Project Structure
+
+```
 task-cli/
 ├── src/
 │   ├── Main.java          # Entry point — runs the program
@@ -38,7 +40,7 @@ task-cli/
 │   └── TaskManager.java   # Manages the task list and file saving/loading
 ├── tasks.txt              # Saved task data
 └── uml-class-diagram.png  # Class diagram
-\`\`\`
+```
 
 ## How to Run
 
